@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Jot | Notes made better</title><!-- Better note-taking -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="vue_test/style.css"></link>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app" v-bind:class="themeClass">
+    <h1>{{ appName }}</h1>
+    <p>{{ message }}</p>
+    <button @click="toggleTheme">{{ nextThemeName }}</button>
+
+    <button-counter prefix="Hello World">This is the slot!!!!</button-counter/>
+  </div>
+
+  <script src="vue_test/main.js"></script>
+</body>
+</html>
